@@ -8,7 +8,7 @@ if [[ -z "$SYMBOL" || -z "$BINARY" ]]; then
 fi
 
 # If SIZE is empty then the symbol is not found and we stop
-SIZE=$(readelf -s $BINARY |grep " $SYMBOL\$"|cut -d ' ' -f6)
+SIZE=$(readelf -sW $BINARY |grep " $SYMBOL\$"|awk '{ print $3 }')
 if [ -z "$SIZE" ]; then
   echo "Error: Symbol '$SYMBOL' not found in the binary."
   exit 1
