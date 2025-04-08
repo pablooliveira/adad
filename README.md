@@ -1,5 +1,7 @@
 # Adad
 
+<a title="Drawn by Henri Faucher-Gudin after Austen Henry Layard, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Ramman.png"><img width="128" alt="Ramman" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ramman.png/256px-Ramman.png?20120107123917"></a>
+
 Adad is a small tool for profiling the energy consumption of specific functions
 in x86-64 binaries.  Other tools measure the energy consumption of an entire
 application, which can be difficult to interpret when there are long
