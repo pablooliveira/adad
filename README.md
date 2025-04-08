@@ -47,7 +47,7 @@ First, run the command:
 ./adad-patch <binary> <symbol>
 ```
 
-This will instrument the function <symbol> with calls to the adad runtime.
+This will instrument the function <symbol> with calls to the adad runtime. The patched binary is written to `a.out`.
 By default the RAPL domain energy-pkg is used. But you can specify the domain by setting the environment variable `ADAD_RAPL_DOMAIN`.
 For example,
 
@@ -67,7 +67,7 @@ Example:
 
 ```bash
 ./adad-patch ./my_binary my_function
-./my_binary
+./a.out
 ./adad-report
 energy-pkg mean: 3.5981 ± 0.0666 (1.85%) Joules from 2 samples
 ```
