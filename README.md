@@ -39,6 +39,9 @@ single individual process. Therefore:
 * For multi-threaded programs only the main thread will call the adad runtime measurement hooks.
   But all the threads will contribute to RAPL measures. Please be very careful when interpreting the results.
 
+With the current binary rewriting technique, instrumenting recursive, tail-call
+optimized, or continuation-passing-style functions may cause issues.
+
 ## Usage
 
 First, run the command:
